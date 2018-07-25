@@ -1,9 +1,9 @@
 "use strict";
 import * as Koa from 'koa'
+import './config'
 import * as router from './container'
 
 const app = new Koa.default()
-
 app.use(router.default)
 
 app.listen(3000, () => {

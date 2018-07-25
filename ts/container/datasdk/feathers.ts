@@ -1,10 +1,10 @@
 import Base from './base'
 export default class Feathers extends Base {
-  constructor () {
-    super()
+  constructor (rootPath: string, path: string) {
+    super(`${rootPath}/${path}`)
   }
 
-  create () {
+  add (data?: any) {
     console.log('Feathers')
   }
 }

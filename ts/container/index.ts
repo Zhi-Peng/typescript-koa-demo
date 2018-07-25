@@ -5,7 +5,6 @@ const mod = [
   'login'
 ]
 
-
 mod.map(item => {
   router.use(`/${item}`, require(`./${item}`).default)
 })

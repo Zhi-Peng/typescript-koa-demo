@@ -1,10 +1,14 @@
 import * as Router from 'koa-router'
-// import sdk from './datasdk'
+import _sdk from './datasdk'
 
+const modname = 'user'
+const sdk = _sdk()
+const curmod = sdk[modname]
 const router = new Router.default()
-router.get('/', (ctx) => {
-  ctx.body = 'get user'
+router.get('/', async (ctx) => {
+  const res = await curmod.get()
+  console.log(res, 'user res');
+  ctx.body = res
 })
-
 
 export default router.routes()

@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/superagent": "^3.8.3",
     "es6-promise": "^4.2.4",
     "koa": "^2.5.2",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "superagent": "^3.8.3"
   },
   "devDependencies": {
     "@types/es6-promise": "^3.3.0",
